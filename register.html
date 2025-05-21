@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | V-Phone</title>
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="src/register.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">V-Phone</div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="promotion.html" class="nav-link">Promotions</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="register.html" class="nav-link active">Register</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="register-banner">
+    <div class="container">
+      <h1>Join the V-Phone Family</h1>
+      <p>Create an account to access exclusive offers and personalized services</p>
+    </div>
+  </section>
+
+  <section class="register-section">
+    <div class="container">
+      <div class="register-content">
+        <div class="register-form-container">
+          <h2>Create Your Account</h2>
+          <form id="register-form" class="register-form">
+            <div class="form-group">
+              <label for="fullname">Full Name</label>
+              <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+              <span class="error-message" id="fullname-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label>Gender</label>
+              <div class="radio-group">
+                <div class="radio-option">
+                  <input type="radio" id="male" name="gender" value="male">
+                  <label for="male">Male</label>
+                </div>
+                <div class="radio-option">
+                  <input type="radio" id="female" name="gender" value="female">
+                  <label for="female">Female</label>
+                </div>
+                <div class="radio-option">
+                  <input type="radio" id="other" name="gender" value="other">
+                  <label for="other">Other</label>
+                </div>
+              </div>
+              <span class="error-message" id="gender-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email address">
+              <span class="error-message" id="email-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+              <span class="error-message" id="phone-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="">Select your country</option>
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="au">Australia</option>
+                <option value="de">Germany</option>
+                <option value="fr">France</option>
+                <option value="jp">Japan</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="error-message" id="country-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Create a password">
+              <span class="error-message" id="password-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password</label>
+              <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password">
+              <span class="error-message" id="confirm-password-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="interests">What are you interested in?</label>
+              <div class="checkbox-group">
+                <div class="checkbox-option">
+                  <input type="checkbox" id="gaming" name="interests" value="gaming">
+                  <label for="gaming">Gaming Phones</label>
+                </div>
+                <div class="checkbox-option">
+                  <input type="checkbox" id="camera" name="interests" value="camera">
+                  <label for="camera">Camera Phones</label>
+                </div>
+                <div class="checkbox-option">
+                  <input type="checkbox" id="budget" name="interests" value="budget">
+                  <label for="budget">Budget Phones</label>
+                </div>
+                <div class="checkbox-option">
+                  <input type="checkbox" id="accessories" name="interests" value="accessories">
+                  <label for="accessories">Accessories</label>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="comments">Additional Comments</label>
+              <textarea id="comments" name="comments" rows="4" placeholder="Tell us anything else you'd like us to know"></textarea>
+            </div>
+            
+            <div class="form-group terms-checkbox">
+              <div class="checkbox-option">
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></label>
+              </div>
+              <span class="error-message" id="terms-error"></span>
+            </div>
+            
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary">Create Account</button>
+            </div>
+          </form>
+          <div class="login-link">
+            <p>Already have an account? <a href="#">Log In</a></p>
+          </div>
+        </div>
+        
+        <div class="register-benefits">
+          <h3>Benefits of Joining</h3>
+          <ul class="benefits-list">
+            <li>
+              <div class="benefit-icon">🔔</div>
+              <div class="benefit-text">
+                <h4>Exclusive Offers</h4>
+                <p>Be the first to know about new products and special promotions.</p>
+              </div>
+            </li>
+            <li>
+              <div class="benefit-icon">🛒</div>
+              <div class="benefit-text">
+                <h4>Faster Checkout</h4>
+                <p>Save your shipping and payment details for quicker shopping.</p>
+              </div>
+            </li>
+            <li>
+              <div class="benefit-icon">📱</div>
+              <div class="benefit-text">
+                <h4>Order Tracking</h4>
+                <p>Track your orders and view your purchase history anytime.</p>
+              </div>
+            </li>
+            <li>
+              <div class="benefit-icon">🎁</div>
+              <div class="benefit-text">
+                <h4>Birthday Rewards</h4>
+                <p>Receive a special gift on your birthday each year.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>V-Phone</h3>
+          <p>Experience the future of mobile technology with V-Phone's innovative smartphones.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="promotion.html">Promotions</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: support@vphone.com</p>
+          <p>Phone: +1 (555) 123-4567</p>
+          <div class="social-links">
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 V-Phone. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="src/script.js"></script>
+  <script src="src/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | V-Phone</title>
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="src/products.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">V-Phone</div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="products.html" class="nav-link active">Products</a></li>
+          <li><a href="promotion.html" class="nav-link">Promotions</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="register.html" class="nav-link">Register</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="product-banner">
+    <div class="container">
+      <h1>Our Smartphones</h1>
+      <p>Discover V-Phone's range of high-performance smartphones</p>
+    </div>
+  </section>
+
+  <section class="products-section">
+    <div class="container">
+      <div class="filter-controls">
+        <p>Filter by category:</p>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All Phones</button>
+          <button class="filter-btn" data-filter="gaming">Gaming</button>
+          <button class="filter-btn" data-filter="camera">Camera</button>
+          <button class="filter-btn" data-filter="budget">Budget</button>
+        </div>
+      </div>
+
+      <div class="products-grid">
+        <!-- Gaming Phones -->
+        <div class="product-item" data-category="gaming">
+          <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+          <div class="product-details">
+            <h3>V-Phone Pro Max</h3>
+            <p class="product-category">Gaming Series</p>
+            <p class="product-description">Our flagship gaming phone with 144Hz display and advanced cooling system.</p>
+            <div class="product-specs">
+              <span>8GB RAM</span>
+              <span>256GB Storage</span>
+              <span>5000mAh Battery</span>
+            </div>
+            <p class="product-price">$899</p>
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+
+        <div class="product-item" data-category="gaming">
+          <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+          <div class="product-details">
+            <h3>V-Phone Gaming Plus</h3>
+            <p class="product-category">Gaming Series</p>
+            <p class="product-description">Designed for serious gamers with custom gaming triggers and RGB lighting.</p>
+            <div class="product-specs">
+              <span>12GB RAM</span>
+              <span>512GB Storage</span>
+              <span>6000mAh Battery</span>
+            </div>
+            <p class="product-price">$999</p>
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+
+        <!-- Camera Phones -->
+        <div class="product-item" data-category="camera">
+          <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+          <div class="product-details">
+            <h3>V-Phone Ultra</h3>
+            <p class="product-category">Camera Series</p>
+            <p class="product-description">Professional-grade camera system with 108MP main sensor and 10x optical zoom.</p>
+            <div class="product-specs">
+              <span>8GB RAM</span>
+              <span>128GB Storage</span>
+              <span>4500mAh Battery</span>
+            </div>
+            <p class="product-price">$799</p>
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+
+        <div class="product-item" data-category="camera">
+          <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+          <div class="product-details">
+            <h3>V-Phone Zoom Pro</h3>
+            <p class="product-category">Camera Series</p>
+            <p class="product-description">Featuring a revolutionary periscope lens for unmatched zoom capabilities.</p>
+            <div class="product-specs">
+              <span>6GB RAM</span>
+              <span>256GB Storage</span>
+              <span>4200mAh Battery</span>
+            </div>
+            <p class="product-price">$849</p>
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+
+        <!-- Budget Phones -->
+        <div class="product-item" data-category="budget">
+          <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+          <div class="product-details">
+            <h3>V-Phone Lite</h3>
+            <p class="product-category">Budget Series</p>
+            <p class="product-description">Affordable yet powerful smartphone with all essential features.</p>
+            <div class="product-specs">
+              <span>4GB RAM</span>
+              <span>64GB Storage</span>
+              <span>4000mAh Battery</span>
+            </div>
+            <p class="product-price">$499</p>
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+
+        <div class="product-item" data-category="budget">
+          <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+          <div class="product-details">
+            <h3>V-Phone Mini</h3>
+            <p class="product-category">Budget Series</p>
+            <p class="product-description">Compact and efficient smartphone for everyday use at an attractive price.</p>
+            <div class="product-specs">
+              <span>3GB RAM</span>
+              <span>32GB Storage</span>
+              <span>3500mAh Battery</span>
+            </div>
+            <p class="product-price">$349</p>
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>V-Phone</h3>
+          <p>Experience the future of mobile technology with V-Phone's innovative smartphones.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="promotion.html">Promotions</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: support@vphone.com</p>
+          <p>Phone: +1 (555) 123-4567</p>
+          <div class="social-links">
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 V-Phone. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="src/script.js"></script>
+  <script src="src/products.js"></script>
+</body>
+</html>
