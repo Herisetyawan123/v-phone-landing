@@ -586,7 +586,7 @@ a:hover {
   }
 
   .hero {
-    height: auto;
+    /* height: auto; */
     min-height: 100vh;
   }
 
